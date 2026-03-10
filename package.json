@@ -1,0 +1,11 @@
+{
+  "name": "mj-foods-site",
+  "version": "1.0.0",
+  "description": "MJ Foods static site helper scripts",
+  "scripts": {
+    "build:images": "node scripts/resize-images.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.0"
+  }
+}
