@@ -6,7 +6,7 @@ const sharp = require('sharp');
 const images = [
   'ewa-oloyin.jpeg', 'yam-flour.jpeg', 'palm-oil.jpeg', 'pepper-soup.jpeg',
   'rice-poundo.jpeg', 'garri-ijebu.jpeg', 'plantain-flour.jpeg', 'ogbono.jpeg',
-  'locust-beans.jpeg', 'suya-spice.jpeg', 'cray-fish.jpeg', 'ofada-rice.jpeg', 'wheat-flour.jpeg'
+  'locust-beans.jpeg', 'suya-spice.jpeg', 'cray-fish.jpeg', 'ofada-rice.jpeg'
 ];
 
 const sizes = [480, 800, 1200];
