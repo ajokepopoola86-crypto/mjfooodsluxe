@@ -778,13 +778,18 @@
             justify-content: center;
             color: white;
             text-decoration: none;
-            font-size: 1rem;
             transition: all 0.3s;
+        }
+        .social-link svg {
+            width: 18px; height: 18px;
+            fill: white;
+            transition: fill 0.3s;
         }
         .social-link:hover {
             background: var(--gold);
             border-color: var(--gold);
         }
+        .social-link:hover svg { fill: var(--green-dark); }
 
         .footer-bottom {
             max-width: 1100px;
@@ -885,23 +890,7 @@
             .footer-top { grid-template-columns: 1fr; }
             .footer-bottom { flex-direction: column; text-align: center; }
         }
-        </style>
-        <meta property="og:image" content="ofada-rice.jpeg">
-        <meta property="og:image:alt" content="Ofada Rice from MJ Foods">
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "MJ Foods",
-            "url": "./",
-            "logo": "ofada-rice.jpeg",
-            "sameAs": [
-                "https://www.instagram.com/mjfoods.luxe",
-                "https://www.facebook.com/share/1CVDLobWMd/",
-                "https://www.tiktok.com/@mjfoods.luxe"
-            ]
-        }
-        </script>
+    </style>
 </head>
 <body>
 
@@ -914,7 +903,7 @@
             <li><a href="#how-to-order">How to Order</a></li>
             <li><a href="https://wa.me/2347084415224" class="nav-cta" target="_blank">Order Now</a></li>
         </ul>
-        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
             <span></span><span></span><span></span>
         </button>
     </nav>
@@ -1004,98 +993,6 @@
         </div>
     </section>
 
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-                {
-                    "@type": "Product",
-                    "name": "Premium Ewa Oloyin",
-                    "image": "ewa-oloyin.jpeg",
-                    "description": "100% natural honey beans. Hand-picked and guaranteed stone-free.",
-                    "sku": "ewa-oloyin"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Yam Flour (Elubo)",
-                    "image": "yam-flour.jpeg",
-                    "description": "Finely milled dark yam flour for smooth, perfect Amala.",
-                    "sku": "yam-flour"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Grade-A Palm Oil",
-                    "image": "palm-oil.jpeg",
-                    "description": "Rich, unadulterated red palm oil — perfect for soups.",
-                    "sku": "palm-oil"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Pepper Soup Spice",
-                    "image": "pepper-soup.jpeg",
-                    "description": "Authentic pepper soup blend for rich, flavourful broth.",
-                    "sku": "pepper-soup"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Rice Poundo",
-                    "image": "rice-poundo.jpeg",
-                    "description": "Low-fat, high-energy Rice Poundo for smooth swallows.",
-                    "sku": "rice-poundo"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Garri Ijebu",
-                    "image": "garri-ijebu.jpeg",
-                    "description": "Properly fermented, dry and crispy Garri Ijebu.",
-                    "sku": "garri-ijebu"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Plantain Flour",
-                    "image": "plantain-flour.jpeg",
-                    "description": "100% unripe plantain flour — nutritious alternative.",
-                    "sku": "plantain-flour"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Premium Ogbono",
-                    "image": "ogbono.jpeg",
-                    "description": "Dried, cleaned Ogbono seeds for thick draw soups.",
-                    "sku": "ogbono"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Locust Beans (Iru)",
-                    "image": "locust-beans.jpeg",
-                    "description": "Fermented locust beans for authentic deep flavour.",
-                    "sku": "locust-beans"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Suya Spice",
-                    "image": "suya-spice.jpeg",
-                    "description": "Spicy suya mix — perfect for grilling meats.",
-                    "sku": "suya-spice"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Premium Crayfish",
-                    "image": "cray-fish.jpeg",
-                    "description": "Clean, dried crayfish with authentic flavour.",
-                    "sku": "cray-fish"
-                },
-                {
-                    "@type": "Product",
-                    "name": "Ofada Rice",
-                    "image": "ofada-rice.jpeg",
-                    "description": "Locally sourced Ofada rice with a nutty flavour.",
-                    "sku": "ofada-rice"
-                }
-            ]
-        }
-        </script>
-
     <!-- PRODUCTS -->
     <section class="products" id="products">
         <div class="section-header reveal">
@@ -1109,11 +1006,7 @@
             <div class="card reveal">
                 <div class="badge">Best Seller</div>
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/ewa-oloyin-480.webp 480w, img/ewa-oloyin-800.webp 800w, img/ewa-oloyin-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/ewa-oloyin-480.jpeg 480w, img/ewa-oloyin-800.jpeg 800w, img/ewa-oloyin-1200.jpeg 1200w">
-                        <img src="ewa-oloyin.jpeg" alt="Ewa Oloyin — Honey beans, stone-free" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="ewa-oloyin.jpeg" alt="Ewa Oloyin Honey Beans" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🫘</div>
                 </div>
                 <div class="card-content">
@@ -1126,11 +1019,7 @@
             <div class="card reveal">
                 <div class="badge">Export Ready</div>
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/yam-flour-480.webp 480w, img/yam-flour-800.webp 800w, img/yam-flour-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/yam-flour-480.jpeg 480w, img/yam-flour-800.jpeg 800w, img/yam-flour-1200.jpeg 1200w">
-                        <img src="yam-flour.jpeg" alt="Yam Flour (Elubo) — for Amala" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="yam-flour.jpeg" alt="Yam Flour Elubo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🍠</div>
                 </div>
                 <div class="card-content">
@@ -1143,11 +1032,7 @@
             <div class="card reveal">
                 <div class="badge">100% Natural</div>
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/palm-oil-480.webp 480w, img/palm-oil-800.webp 800w, img/palm-oil-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/palm-oil-480.jpeg 480w, img/palm-oil-800.jpeg 800w, img/palm-oil-1200.jpeg 1200w">
-                        <img src="palm-oil.jpeg" alt="Grade-A Red Palm Oil" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="palm-oil.jpeg" alt="Grade-A Palm Oil" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🫙</div>
                 </div>
                 <div class="card-content">
@@ -1160,11 +1045,7 @@
             <div class="card reveal">
                 <div class="badge">Fan Favourite</div>
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/pepper-soup-480.webp 480w, img/pepper-soup-800.webp 800w, img/pepper-soup-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/pepper-soup-480.jpeg 480w, img/pepper-soup-800.jpeg 800w, img/pepper-soup-1200.jpeg 1200w">
-                        <img src="pepper-soup.jpeg" alt="Pepper Soup Spice — authentic Nigerian blend" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="pepper-soup-spice.jpeg" alt="Pepper Soup Spice" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🌶️</div>
                 </div>
                 <div class="card-content">
@@ -1176,11 +1057,7 @@
 
             <div class="card reveal">
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/rice-poundo-480.webp 480w, img/rice-poundo-800.webp 800w, img/rice-poundo-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/rice-poundo-480.jpeg 480w, img/rice-poundo-800.jpeg 800w, img/rice-poundo-1200.jpeg 1200w">
-                        <img src="rice-poundo.jpeg" alt="Rice Poundo — instant swallow" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="rice-poundo.jpeg" alt="Rice Poundo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🍚</div>
                 </div>
                 <div class="card-content">
@@ -1193,11 +1070,7 @@
             <div class="card reveal">
                 <div class="badge">Crisp & Dry</div>
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/garri-ijebu-480.webp 480w, img/garri-ijebu-800.webp 800w, img/garri-ijebu-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/garri-ijebu-480.jpeg 480w, img/garri-ijebu-800.jpeg 800w, img/garri-ijebu-1200.jpeg 1200w">
-                        <img src="garri-ijebu.jpeg" alt="Garri Ijebu — crispy, properly fermented" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="garri-ijebu.jpeg" alt="Garri Ijebu" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🌾</div>
                 </div>
                 <div class="card-content">
@@ -1210,11 +1083,7 @@
             <div class="card reveal">
                 <div class="badge">Healthy Choice</div>
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/plantain-flour-480.webp 480w, img/plantain-flour-800.webp 800w, img/plantain-flour-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/plantain-flour-480.jpeg 480w, img/plantain-flour-800.jpeg 800w, img/plantain-flour-1200.jpeg 1200w">
-                        <img src="plantain-flour.jpeg" alt="Plantain Flour — unripe plantain, nutritious" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="plantain-flour.jpeg" alt="Plantain Flour" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🍌</div>
                 </div>
                 <div class="card-content">
@@ -1226,11 +1095,7 @@
 
             <div class="card reveal">
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/ogbono-480.webp 480w, img/ogbono-800.webp 800w, img/ogbono-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/ogbono-480.jpeg 480w, img/ogbono-800.jpeg 800w, img/ogbono-1200.jpeg 1200w">
-                        <img src="ogbono.jpeg" alt="Premium Ogbono seeds" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="ogbono.jpeg" alt="Premium Ogbono" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🥜</div>
                 </div>
                 <div class="card-content">
@@ -1242,11 +1107,7 @@
 
             <div class="card reveal">
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/locust-beans-480.webp 480w, img/locust-beans-800.webp 800w, img/locust-beans-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/locust-beans-480.jpeg 480w, img/locust-beans-800.jpeg 800w, img/locust-beans-1200.jpeg 1200w">
-                        <img src="locust-beans.jpeg" alt="Locust Beans (Iru) — fermented seasoning" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="locust-beans.jpeg" alt="Locust Beans Iru" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🫘</div>
                 </div>
                 <div class="card-content">
@@ -1258,11 +1119,7 @@
 
             <div class="card reveal">
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/suya-spice-480.webp 480w, img/suya-spice-800.webp 800w, img/suya-spice-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/suya-spice-480.jpeg 480w, img/suya-spice-800.jpeg 800w, img/suya-spice-1200.jpeg 1200w">
-                        <img src="suya-spice.jpeg" alt="Suya Spice — authentic grilling mix" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="suya-spice.jpeg" alt="Suya Spice" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🔥</div>
                 </div>
                 <div class="card-content">
@@ -1275,11 +1132,7 @@
             <div class="card reveal">
                 <div class="badge">Fresh & Clean</div>
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/cray-fish-480.webp 480w, img/cray-fish-800.webp 800w, img/cray-fish-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/cray-fish-480.jpeg 480w, img/cray-fish-800.jpeg 800w, img/cray-fish-1200.jpeg 1200w">
-                        <img src="cray-fish.jpeg" alt="Premium Dried Crayfish" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="cray-fish.jpeg" alt="Premium Crayfish" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🦐</div>
                 </div>
                 <div class="card-content">
@@ -1292,17 +1145,26 @@
             <div class="card reveal">
                 <div class="badge">Authentic Rice</div>
                 <div class="img-wrapper">
-                    <picture>
-                        <source type="image/webp" srcset="img/ofada-rice-480.webp 480w, img/ofada-rice-800.webp 800w, img/ofada-rice-1200.webp 1200w" sizes="(max-width:600px) 480px, (max-width:900px) 800px, 1200px">
-                        <source type="image/jpeg" srcset="img/ofada-rice-480.jpeg 480w, img/ofada-rice-800.jpeg 800w, img/ofada-rice-1200.jpeg 1200w">
-                        <img src="ofada-rice.jpeg" alt="Ofada Rice — locally sourced, nutty flavour" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    </picture>
+                    <img src="ofada-rice.jpeg" alt="Ofada Rice" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="product-emoji" style="display:none">🍚</div>
                 </div>
                 <div class="card-content">
                     <h3>Ofada Rice</h3>
                     <p>Premium locally sourced Ofada rice, carefully processed for that distinctive nutty flavour diaspora cooks love.</p>
                     <a href="https://wa.me/2347084415224?text=Hi%20MJ%20Foods!%20I'm%20interested%20in%20the%20Ofada%20Rice" class="order-link" target="_blank">Order Now →</a>
+                </div>
+            </div>
+
+            <div class="card reveal">
+                <div class="badge">Premium Quality</div>
+                <div class="img-wrapper">
+                    <img src="wheat-flour.jpeg" alt="Wheat Flour" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="product-emoji" style="display:none">🌾</div>
+                </div>
+                <div class="card-content">
+                    <h3>Wheat Flour</h3>
+                    <p>Finely milled, high-quality wheat flour. Perfect for baking and cooking traditional Nigerian dishes with a smooth, consistent texture.</p>
+                    <a href="https://wa.me/2347084415224?text=Hi%20MJ%20Foods!%20I'm%20interested%20in%20the%20Wheat%20Flour" class="order-link" target="_blank">Order Now →</a>
                 </div>
             </div>
 
@@ -1394,10 +1256,22 @@
                 <a href="#" class="logo">MJ<span>FOODS</span></a>
                 <p>Premium, authentic Nigerian groceries shipped to the diaspora worldwide. No additives. No shortcuts. Just the real thing.</p>
                 <div class="social-links">
-                    <a href="https://www.instagram.com/mjfoods.luxe" class="social-link" target="_blank" title="Instagram">📸</a>
-                    <a href="https://www.facebook.com/share/1CVDLobWMd/" class="social-link" target="_blank" title="Facebook">📘</a>
-                    <a href="https://www.tiktok.com/@mjfoods.luxe" class="social-link" target="_blank" title="TikTok">🎵</a>
-                    <a href="https://wa.me/2347084415224" class="social-link" target="_blank" title="WhatsApp">💬</a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/mjfoods.luxe" class="social-link" target="_blank" title="Instagram">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/share/1CVDLobWMd/" class="social-link" target="_blank" title="Facebook">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.269h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@mjfoods.luxe" class="social-link" target="_blank" title="TikTok">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/2347084415224" class="social-link" target="_blank" title="WhatsApp">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
                 </div>
             </div>
             <div class="footer-col">
@@ -1414,7 +1288,7 @@
             <div class="footer-col">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="mailto:sales@mjfoods.com">sales@mjfoods.com</a></li>
+                    <li><a href="mailto:mjfoods.exports@gmail.com"><span class="__cf_email__" data-cfemail="214c4b474e4e45520f4459514e53555261464c40484d0f424e4c">[mjfoods.exports@gmail.com]</span></a></li>
                     <li><a href="https://wa.me/2347084415224" target="_blank">WhatsApp Us</a></li>
                     <li><a href="https://www.instagram.com/mjfoods.luxe" target="_blank">@mjfoods.luxe</a></li>
                 </ul>
@@ -1427,7 +1301,7 @@
     </footer>
 
     <!-- FLOATING WHATSAPP -->
-    <a href="https://wa.me/2347084415224?text=Hello%20MJ%20Foods,%20I'd%20like%20to%20place%20an%20order!" class="float-wa" target="_blank" title="Order on WhatsApp">
+    <a href="https://wa.me/2347084415224" class="float-wa" target="_blank" title="Order on WhatsApp">
         💬
         <span class="float-wa-tooltip">Order on WhatsApp</span>
     </a>
@@ -1443,31 +1317,42 @@
             document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
         });
 
-        // Hamburger menu (accessibility: toggle aria-expanded)
+        // Hamburger menu
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobileMenu');
         hamburger.addEventListener('click', () => {
-            const isOpen = hamburger.classList.toggle('open');
-            mobileMenu.classList.toggle('open', isOpen);
-            hamburger.setAttribute('aria-expanded', isOpen);
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
         });
         function closeMobile() {
             hamburger.classList.remove('open');
             mobileMenu.classList.remove('open');
-            hamburger.setAttribute('aria-expanded', false);
         }
 
-        // Scroll reveal
+        // Scroll reveal — with fallback so page never stays blank
         const reveals = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, i) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        reveals.forEach(el => observer.observe(el));
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, i) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+
+            reveals.forEach(el => observer.observe(el));
+
+            // Fallback: if elements still hidden after 800ms, reveal everything
+            setTimeout(() => {
+                document.querySelectorAll('.reveal:not(.visible)')
+                    .forEach((el, i) => setTimeout(() => el.classList.add('visible'), i * 60));
+            }, 800);
+        } else {
+            // No IntersectionObserver support — show all immediately
+            reveals.forEach(el => el.classList.add('visible'));
+        }
     </script>
 </body>
 </html>
